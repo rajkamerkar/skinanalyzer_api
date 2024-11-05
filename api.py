@@ -31,13 +31,13 @@ def annotate_image(img, confidence=0.25):
 def save_to_github(image_data, image_name):
     """Uploads the image to a GitHub repository and returns the image URL."""
     # Set up GitHub repository details
-    github_token = "YOUR_GITHUB_TOKEN"  # Replace with your GitHub token
-    repo_owner = "YOUR_GITHUB_USERNAME"
-    repo_name = "YOUR_REPOSITORY_NAME"
+    github_token = "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"  # Replace with your GitHub token
+    repo_owner = "rajkamerkar"
+    repo_name = "skinanalyzer_api"
     branch_name = "main"
 
     # Prepare the GitHub API URL
-    url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/contents/results/{image_name}"
+    url = f"https://api.github.com/repos/rajkamerkar/skinanalyzer_api/contents/results/{image_name}"
     headers = {
         "Authorization": f"token {github_token}",
         "Accept": "application/vnd.github.v3+json"
